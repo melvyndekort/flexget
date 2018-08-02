@@ -1,4 +1,4 @@
-FROM python:alpine
+FROM python:3.7.0-alpine3.8
 
 RUN pip install --no-cache-dir --upgrade setuptools flexget
 
