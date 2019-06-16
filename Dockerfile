@@ -1,6 +1,6 @@
-FROM python:2.7.15-alpine3.8
+FROM python:3.7.3-alpine3.9
 
-RUN pip install --no-cache-dir --upgrade setuptools flexget==2.17.24
+RUN pip install --no-cache-dir --upgrade setuptools flexget==2.21.8
 
 VOLUME ["/root/.flexget"]
 
