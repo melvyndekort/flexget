@@ -2,8 +2,10 @@ FROM python:alpine3.11
 
 RUN pip install --no-cache-dir --upgrade setuptools flexget==3.1.51
 
+COPY run.sh /
+
 VOLUME ["/root/.flexget"]
 
 EXPOSE 5050
 
-CMD ["flexget", "daemon", "start", "--autoreload-config"]
+CMD ["/run.sh" ]
